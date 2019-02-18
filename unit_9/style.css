@@ -1,0 +1,466 @@
+@import url(https://fonts.googleapis.com/css?family=Heebo);
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400i,400,700');
+
+* { 
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; 
+}
+
+body {
+	background-color: #F3F3F4;
+	font-family: Heebo, sans-serif; 
+	font-size: 16px;
+	position: relative;
+	text-align: center;
+	margin: 7.5em 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+
+#wrapper {
+	max-width:1200px;
+	margin: 0 auto;
+}
+
+header {
+	position: fixed;
+    z-index: 100;
+    background-color: #F3F3F4;
+    margin: -7.5em 0
+}
+
+.logo {
+	width: 39%;
+    display: inline-block;
+    margin: 1em auto 0.4em;
+}
+
+.intro {
+	position: relative;
+}
+
+.brand_name { 
+	position: absolute; 
+	top: 1%;
+    left: 36%;
+}
+
+nav {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.15em; 
+	margin: 1em auto;
+	font-size: 0.9em;
+}
+
+nav a {
+	margin-right: 1.1em;
+	margin-left: 1.1em;
+	margin-bottom: 1.1em;
+
+}
+
+nav a:hover {
+ 	border-bottom: 2px solid #000;
+	padding-bottom: 0.4em;  
+	
+}
+
+
+.nav_icons a {
+	float: left;
+}
+
+.nav_icons {
+	 width: 16%;
+     margin: 2.5% 0;
+     float: left;
+     position: absolute;
+}
+
+.nav_icons a:hover { 
+	border-bottom: none; 
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition:border-bottom ease-in-out 0.05s;
+}
+
+.shopnow { 
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 1em auto;
+    font-size: 0.9em;
+
+}
+
+.newinshop { 
+ 	text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 1em 2em;
+    font-size: 0.9em;
+    float: left;
+    position: absolute;
+    top: 85%;
+    left: 4px;
+    color: #F3F3F4
+}
+
+.newinbutton:hover {
+ 	border-bottom: 2px solid #F3F3F4;
+	padding-bottom: 0.4em;
+
+}
+
+.button { 
+	transition:border-bottom ease-in-out 0.05s; 
+}
+
+.button:hover {
+	border-bottom: 2px solid #000;
+	padding-bottom: 0.4em; 
+
+}
+
+img {
+	width: 100%;
+}
+
+.wrapper_one { 
+	width: 95%;
+	margin: 5% auto; 
+}
+
+.wrapper_two { 
+	margin: 5% auto;
+    width: 95%;
+}
+
+.item_group { 
+	width: 30%; 
+	margin: 8% 1.5%;
+	float: left;
+	position: relative;
+}
+
+.bestsellers {
+ 	width: 18%;
+ 	float: left;
+ 	margin: 1%;
+ 	margin-bottom: 8%;
+}
+
+span { 
+	font-weight: 700; 
+}
+
+.blogimg {
+	position: relative;
+	width: 69%;
+	clear: both;
+}
+
+.blogtext { 
+	width: 100%; 
+}
+
+p {
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.15em;
+	width: 78%;
+	margin: 1em auto;
+}
+
+h2 { 
+	font-family: 'Old Standard TT', serif;
+	font-size: 10em;
+	font-weight: 400;
+	font-style: italic;
+	position: absolute;
+    top: 54%;
+    left: 3%;
+    color: #F3F3F4;
+}
+
+h3 { 
+	margin: 1em auto;
+	text-transform: uppercase;
+	letter-spacing: 0.15em; 
+	margin: 1.2em auto;
+	font-size: 1.3em;
+}
+
+.container { 
+ 	clear: both;
+ 	margin: 16% auto; 
+}
+
+input[type=text] {
+    margin: 5px;
+    border: none;
+    background-color: #F3F3F4;
+    padding-bottom: 6px;
+    font-family: Heebo, sans-serif; 
+	font-size: 16px;
+	transition:all ease-in-out 1s;
+	width: 10%;
+
+}
+
+input[type=text]:hover { 
+	border-bottom: 2px solid #000;
+	width: 25%;
+ }
+
+input[type=text]:focus { 
+outline: none;
+}
+
+input[type=submit] {
+	font-family: Heebo, sans-serif; 
+	font-size: 16px;
+	background-color: #F3F3F4;
+	border: none;
+}
+
+input[type=submit]:hover {
+	border-bottom: 2px solid #000;
+	padding-bottom: 0.4em; 
+}
+
+footer {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-style: italic;
+	font-size: 1em;
+	clear: both;
+}
+
+label {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.15em; 
+	margin: 1em auto;
+	font-size: 0.9em;
+	display: none;
+}
+
+#toggle { 
+	display: none;
+} 
+
+
+@media only screen and (max-width:1160px ) {
+	h2 { 
+	top: 45%; 
+	}
+
+}
+
+
+@media only screen and (max-width:1135px ) {
+
+	.item_group {  
+		margin: 0.5%;
+	    width: 32%;
+	}
+
+	.bestsellers { 
+		width: 19%;
+	 	margin: 0.5%;
+	}
+
+	.blogtext p { 
+		width: 85%;
+	}
+
+}
+
+
+@media only screen and (max-width:1000px ) {
+
+	.item_group { 
+	    width: 46%;
+	    margin: 2%;
+	}
+
+	.bestsellers { 
+		width: 21%;
+	    margin: 2%;
+	 }
+
+	.bestsellers:nth-of-type(5) {
+		display: none; 
+	}
+		
+	.blogimg { 
+		width: 80%; 
+	} 
+
+}
+
+@media only screen and (max-width:995px ) {
+	.item_group { 
+	    width: 46%;
+	    margin: 2%;
+	}
+
+	.blogimg { 
+		width: 100%; 
+	} 
+
+	.blogtext { 
+		width: 83%;
+		margin: auto; 
+	}
+
+	h2 { 
+	top: 36%; 
+	}
+
+	.newinshop { 
+	top: 78%; 
+	}
+}
+
+@media only screen and (max-width:900px ) {
+
+	nav {
+		display:none;
+	}
+
+	nav a:link { 
+		display: block;
+	}
+
+	nav a:hover { 
+		border-bottom: none;
+		padding: 0;
+	}
+
+	header {
+		position: relative;
+	    margin: 1.5em 0;
+	}
+
+	body { 
+		margin: -0.5em 0; 
+	}
+
+	label {
+		display: block;
+	}
+
+	#toggle:checked + nav{
+		display:block;
+
+	}
+
+	.logo {
+		width: 50%;
+		}
+
+	h2 {
+	top: 30%;
+    font-size: 9em;
+	}
+
+}
+
+@media only screen and (max-width:876px ) {
+	.bestsellers { 
+		width: 23%;
+	    margin: 1%;
+	    font-size: 0.8em; 
+	}
+
+	.brand_name { 
+	top: 7%; 
+}
+
+}
+
+@media only screen and (max-width:855px ) {
+	.container p { 
+		width: 41%; 
+	}
+
+
+}
+
+@media only screen and (max-width:740px ) {
+
+	.item_group { 
+		float: none;
+	    width: 70%;
+	    margin: auto;
+	}
+
+	p { 
+		width: 100%; 
+	}
+
+	.item_group:nth-of-type(3) { 
+		margin-bottom: 10%; 
+	}
+
+	.bestsellers { 
+		float: none;
+		width: 50%; 
+		margin: auto;
+		font-size: 1em;
+	}
+	
+
+	.container p { 
+		width:85%; 
+	}
+
+	.logo {
+		width: 65%;
+	}
+
+	.blogtext { 
+	width: 100%; 
+	}
+
+}
+
+@media only screen and (max-width:650px ) {
+
+	.logo {
+		width: 90%;
+	}
+
+	h2 { 
+	top: 25%;
+    font-size: 6em; 
+	}
+
+	.newinshop { 
+	top: 67%; 
+	}
+
+}
+
+@media only screen and (max-width:500px ) {
+	h2 { 
+	    top: 18%;
+	    left: 7%;
+	    font-size: 5em; 
+}
+
+
+
